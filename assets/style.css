@@ -56,7 +56,6 @@ table {
 }
 .container {
     max-width: 1000px;
-    padding: 0 32px;
     margin: 0 auto;
 }
 .flex {
@@ -80,11 +79,14 @@ header{
 }
 .header {
     background-color: white;
-    width: 970px;
-    position: fixed;
-    top: 50px;
-    padding-right: 30px;
+    width: 100%;
     box-shadow: 0 3px 2px black;
+}
+.header-cont {
+    position: fixed;
+    top: 10%;
+    width: 100%;
+    margin: 0 auto;
 }
 
 /* LOGO */
