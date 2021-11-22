@@ -1,0 +1,486 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+v2.0 | 20110126
+License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+/* general */
+
+*{  
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+}
+.container {
+    max-width: 1000px;
+    padding: 0 32px;
+    margin: 0 auto;
+}
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/* header */
+
+.bgimg {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)) , url("../assets/media/banner.jpg");
+    height: 100vh;
+    background-repeat: no-repeat;
+    width: 100vw;
+}
+header{
+    position: relative;
+    text-align: center;
+}
+.header {
+    background-color: white;
+    width: 970px;
+    position: fixed;
+    top: 50px;
+    padding-right: 30px;
+    box-shadow: 0 3px 2px black;
+}
+
+/* LOGO */
+.header img{
+    height: 70px;
+    vertical-align: middle;
+}
+.header span{
+    font-size: 18px;
+    color:#ec523f;
+    font-weight: 900;
+    padding: 0 12px;
+}
+
+/* Header Icons*/
+
+
+.navicon{
+    padding: 0 8px;
+}
+.navicon a{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin-top: 10px;
+    border-radius: 50%;
+    color: black;
+    background-color: white;
+}
+
+.navicon a i{
+    padding: 8px;
+}
+
+/* MenuBar */
+
+
+.navbar a {
+    margin: 0 15px;
+    padding: 25px 0;
+    font-size: 12px;
+    font-weight: 500;
+    color: black;
+}
+.navbar a:hover, .navbar a:active {
+    color: rgb(234 81 62);
+    border-top: 3px solid #ec523f;
+}
+
+.content {
+    padding: 300px 0;
+}
+
+/* Image Content*/
+
+
+.content h1{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 22px;
+    color: #fff;
+    font-weight: 600;
+    text-decoration-line: underline;
+}
+.content p{
+    font-size: 11px;
+    color: #fff;
+    font-weight: 400;
+    padding: 6px 0;
+}
+.content a{
+    display: inline-block;
+    background-color: #ec523f;
+    width: 80px;
+    height: 25px;
+    margin: 10px 0;
+}
+.content  span{
+    font-size: 8px;
+    color: white;
+    font-weight: 900;
+}
+
+/* Slide dots */
+
+
+.slide {
+    text-align: center;
+    margin: 8px 0;
+}
+.dot, .dot1{
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color:rgb(196, 189, 189);
+}
+.dot1{
+    background-color: black;
+}
+
+
+/* Headings and paragraphs */
+
+
+
+h2 {
+    font-size: 18px;
+    font-weight: 709;
+    text-decoration-line: underline;
+}
+.sec1 p, .sec2 p, .sec3 p, .sec4 p {
+    font-size: 10px;
+    padding:10px 0;
+    color: #5e5c5c;
+}
+.sec1, .sec2, .sec3, .sec4 {
+    text-align: center;
+}
+.sec2 , .sec3, .sec4 {
+    padding: 60px 0;
+}
+h3 {
+    font-weight: 300;
+    font-size: 12px;
+    font-style: italic;
+    color: grey;
+}
+#para3 {
+    font-style: italic;
+    color: #a3a1a1;
+    padding: 2px 0;
+}
+
+
+
+/* section 1 */
+
+.sec1 {
+    padding: 130px 0 60px 0;
+}
+.services span{
+    padding: 100px;
+    color: white;
+}
+.wrap {
+    flex-wrap: wrap;
+    padding: 20px 0;
+    font-size: 30px;
+}
+.sb1 {
+    background-color: #5cbd9d;
+}
+.sb2 {
+    background-color: #e67f31;
+}
+.sb3 {
+    background-color: #3998db;
+}
+.sb4 {
+    background-color: #68cd73;
+}
+
+
+
+/* section 2 */
+
+
+.col {
+    flex: 0 1 23%;
+    margin: 12px 0;
+}
+.col img{
+    width: 100%;
+}
+
+
+/* section 3 */
+
+
+
+.team img{
+    border-radius: 50%;
+}
+
+
+
+/* SubSec3  */
+
+.col1 {
+    flex: 0 1 60%;
+    align-self: flex-start;
+}
+.col2 {
+    flex: 0 1 34%;
+    align-self: flex-start;
+}
+.col1 p{
+    text-align: left;
+    font-size: 15x;
+    font-weight: 300;
+    line-height: 1.3;
+}
+.col1 span{
+    font-weight: 700;
+    color: rgb(234 81 62);
+}
+
+.bar {
+    background-color: rgb(231 231 231);
+    display: block;
+    width: 100%;
+    overflow: hidden;
+    margin: 10px 10px;
+}
+.bar span{
+    float: left;
+    display: block;
+    padding: 10px;
+    font-size: 8px;
+    background-color: rgb(234 81 62);
+    color: white;
+}
+.b1 {
+    width: 90%;
+}
+.b2 {
+    width: 80%;
+}
+.b3 {
+    width: 70%;
+}
+.b4 {
+    width: 80%;
+}
+
+
+
+
+/* Section 4 */
+
+.coln {
+    flex: 0 1 45%;
+    text-align: left;
+    line-height: 1.2;
+    align-self: flex-start;
+}
+.coln p{
+    font-size: 11px;
+}
+.mail {
+    font-weight: 700;
+    color: rgb(234 81 62);
+}
+.blue{
+    font-weight: 700;
+    color: rgb(27 127 204 / 80%);
+}
+.green {
+    font-weight: 700;
+    color: #30ba67;
+}
+.bold{
+    font-weight: 700;
+    color: rgb(100, 97, 97);
+}
+.coln input {
+    position: relative;
+    width: 100%;
+    margin: 10px 0;
+}
+.message {
+    height: 120px;
+}
+.btn1 {
+    background-color: rgb(234 81 62);
+    color: white;
+    width: 100%;
+    border: none;
+    padding: 6px;
+}
+input::placeholder{
+    position: absolute;
+    top: 1px;
+    left: 1px;
+}
+
+
+/* Footer  */
+
+.btn{
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: rgb(234 81 62);
+    font-size: 10px;
+    color: white;
+}
+.foot p{
+    font-size: 10px;
+    color: rgb(73, 72, 72);
+    font-weight: 300;
+}
+
+
+
+/* Gallery Section */
+
+
+/* SideBar Logo Button */
+
+header {
+    padding: 10px 0;
+}
+.sidebar {
+    flex: 25%;
+    height: 100vh;
+    flex-direction: column;
+    background-color: #ec523f;
+}
+.logo img{
+    height: 70px;
+    vertical-align: middle;
+}
+.logo span{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+}
+.logo {
+    margin: 0 100px 0 0;
+}
+.butn {
+    background-color: #ec523f;
+    border: 1px solid white;
+    color: #fff;
+    padding: 5px 10px;
+}
+
+
+
+/* Sidebar Content */
+
+.contnt {
+    width: 90%;
+    margin-bottom: 30px;
+}
+h4 {
+    font-size: 22px;
+    font-weight: 800;
+    color: white;
+    padding: 10px;
+}
+.contnt p{
+    font-size: 11px;
+    font-weight: 700;
+    padding: 10px;
+    line-height: 1.2;
+}
+.contnt nav{
+    padding: 10px 0px;
+}
+.contnt nav i{
+    height: 20px;
+    color: white;
+    border-radius: 50%;
+    border: 1px solid white;
+    padding: 6px 8px 20px 8px;
+    margin: 0 5px;
+
+}
+
+
+/* Gallery Section*/
+
+
+.main {
+    flex: 70%;
+    height: 100vh;
+    overflow: auto;
+    padding: 20px 10px;
+}
+.main .row {
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.main .column{
+    flex: 50%;
+    padding: 0 10px;
+}
+.main .column img{
+    width: 100%;
+    margin: 10px 0;
+    border: 2px solid black;
+}
+.main h4 {
+    color: black;
+    font-weight: 900;
+    font-size: 30px;
+}
